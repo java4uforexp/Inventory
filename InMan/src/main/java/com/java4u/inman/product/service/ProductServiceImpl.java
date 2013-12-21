@@ -7,6 +7,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.java4u.inman.product.beans.Product;
 import com.java4u.inman.product.beans.ProductBeanConverter;
@@ -18,6 +20,7 @@ import com.java4u.inman.product.entity.ProductEntity;
  *
  */
 @Service("productService")
+@Transactional(propagation=Propagation.REQUIRED)
 public class ProductServiceImpl implements ProductService {
 	
 	@Autowired

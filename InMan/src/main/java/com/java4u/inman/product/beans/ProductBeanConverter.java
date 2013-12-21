@@ -28,6 +28,7 @@ public class ProductBeanConverter {
 			productEntity.setUpdatedBy(product.getUpdatedBy());
 			productEntity.setUpdatedDate(product.getUpdatedDate());
 			productEntity.setPrice(product.getPrice());
+			productEntity.setId(product.getId());
 			productEntity.setProductName(product.getProductName());
 			CategoryEntity categoryEntity = new CategoryEntity();
 			categoryEntity.setId(product.getCategory().getId());
@@ -46,6 +47,7 @@ public class ProductBeanConverter {
 			product.setUpdatedBy(productEntity.getUpdatedBy());
 			product.setUpdatedDate(productEntity.getUpdatedDate());
 			product.setPrice(productEntity.getPrice());
+			product.setId(productEntity.getId());
 			product.setProductName(productEntity.getProductName());
 			Category category = new Category();
 			category.setId(productEntity.getCategoryEntity().getId());

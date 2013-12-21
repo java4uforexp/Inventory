@@ -22,7 +22,8 @@ import com.java4u.inman.product.entity.ProductEntity;
 public class ProductDAOImpl extends AbstractDao<ProductEntity> implements ProductDAO {
 
 	public ProductDAOImpl() {
-		super();
+		
+		this(ProductEntity.class);
 		// TODO Auto-generated constructor stub
 	}
 
